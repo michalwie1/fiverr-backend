@@ -1,0 +1,94 @@
+[
+    {
+"fullname":"Sophia Adams", 
+"imgUrl":"https://res.cloudinary.com/dwc11osoz/image/upload/v1767814526/4_vosvoc.jpg", 
+"level":5, 
+"rate":5 
+},
+ { 
+"fullname":"Liam Johnson", 
+"imgUrl":"https://res.cloudinary.com/dwc11osoz/image/upload/v1767815206/5_wyyray.jpg", 
+"level":4, 
+"rate":4 
+},
+ { 
+"fullname":"Olivia Brown", 
+"imgUrl":"https://res.cloudinary.com/dwc11osoz/image/upload/v1767814538/6_eo9pus.jpg", 
+"level":3, 
+"rate":4 
+},
+ { 
+"fullname":"Ethan Smith", 
+"imgUrl":"https://res.cloudinary.com/dwc11osoz/image/upload/v1767814562/1_nmhwxf.jpg", 
+"level":4, 
+"rate":5 },
+{  "fullname":"Isabella Martinez", "imgUrl":"https://res.cloudinary.com/dwc11osoz/image/upload/v1767814542/9_c8dbzf.jpg", "level":5, "rate":5 },
+{  "fullname":"Noah Wilson", "imgUrl":"https://res.cloudinary.com/dwc11osoz/image/upload/v1767814558/2_sofpjc.jpg", "level":5, "rate":5 },
+{  "fullname":"Emma Davis", "imgUrl":"https://res.cloudinary.com/dwc11osoz/image/upload/v1767814519/3_fkwr7v.jpg", "level":5, "rate":5 },
+{ "fullname":"James Taylor", "imgUrl":"https://res.cloudinary.com/dwc11osoz/image/upload/v1767815192/7_ay36fx.jpg", "level":5, "rate":5 },
+{  "fullname":"Mia Anderson", "imgUrl":"public/img/users/9.jpg", "level":4, "rate":4 },
+{  "fullname":"Lucas Moore", "imgUrl":"public/img/users/10.jpg", "level":5, "rate":5 },
+{  "fullname":"Noah Cohen", "imgUrl":"public/img/users/1.jpg", "level":5, "rate":5 },
+{  "fullname":"Daniel Katz", "imgUrl":"public/img/users/2.jpg", "level":4, "rate":5 },
+{  "fullname":"Mia Robinson", "imgUrl":"public/img/users/3.jpg", "level":3, "rate":4 },
+
+{  "fullname":"Ella Walker", "imgUrl":"public/img/users/4.jpg", "level":4, "rate":4 },
+{  "fullname":"Ryan Sullivan", "imgUrl":"public/img/users/5.jpg", "level":5, "rate":5 },
+{  "fullname":"Julien Dupont", "imgUrl":"public/img/users/1.jpg", "level":4, "rate":4 },
+{  "fullname":"Max Fischer", "imgUrl":"public/img/users/2.jpg", "level":5, "rate":5 },
+{  "fullname":"Yuki Tanaka", "imgUrl":"public/img/users/3.jpg", "level":3, "rate":4 },
+{  "fullname":"Kenji Nakamura", "imgUrl":"public/img/users/4.jpg", "level":5, "rate":5 },
+{  "fullname":"Logan price", "imgUrl":"public/img/users/5.jpg", "level":4, "rate":4 },
+{  "fullname":"Grace Hall", "imgUrl":"public/img/users/6.jpg", "level":4, "rate":4 },
+{ "fullname":"Giglos Fernandez", "imgUrl":"public/img/users/7.jpg", "level":3, "rate":4 },
+
+{  "fullname":"Hannah King", "imgUrl":"public/img/users/8.jpg", "level":2, "rate":4 },
+
+{  "fullname":"Nathan Scott", "imgUrl":"public/img/users/9.jpg", "level":5, "rate":5 },
+
+{  "fullname":"Ethan Brooks", "imgUrl":"public/img/users/10.jpg", "level":5, "rate":5 },
+
+{  "fullname":"Marco Bianchi", "imgUrl":"public/img/users/1.jpg", "level":5, "rate":5 },
+
+{  "fullname":"Diego Morales", "imgUrl":"public/img/users/2.jpg", "level":4, "rate":4 },
+
+{  "fullname":"Kevin Moore", "imgUrl":"public/img/users/3.jpg", "level":4, "rate":4 },
+
+{  "fullname":"Patrick O’Connor", "imgUrl":"public/img/users/4.jpg", "level":3, "rate":4 },
+
+{  "fullname":"Ravi Kumar", "imgUrl":"public/img/users/5.jpg", "level":5, "rate":5 },
+
+{  "fullname":"Nathan Scott", "imgUrl":"public/img/users/6.jpg", "level":5, "rate":5 },
+
+{  "fullname":"Brian Taylor", "imgUrl":"public/img/users/7.jpg", "level":4, "rate":4 },
+
+{  "fullname":"Logan price", "imgUrl":"public/img/users/8.jpg", "level":5, "rate":5 },
+
+{  "fullname":"Emma Walker", "imgUrl":"public/img/users/9.jpg", "level":4, "rate":4 },
+
+{  "fullname":"Sean Murphy", "imgUrl":"public/img/users/10.jpg", "level":4, "rate":4 },
+
+{  "fullname":"Ryan Sullivan", "imgUrl":"public/img/users/1.jpg", "level":3, "rate":4 },
+
+{  "fullname":"Andrei Popescu", "imgUrl":"public/img/users/2.jpg", "level":4, "rate":4 },
+
+{  "fullname":"Ivan Ivanov", "imgUrl":"public/img/users/3.jpg", "level":4, "rate":4 },
+
+{  "fullname":"Lucas Schneider", "imgUrl":"public/img/users/4.jpg", "level":5, "rate":5 },
+
+{  "fullname":"Felix Weber", "imgUrl":"public/img/users/5.jpg", "level":5, "rate":5 },
+
+{  "fullname":"Eitan Rosen", "imgUrl":"public/img/users/6.jpg", "level":5, "rate":5 },
+
+{  "fullname":"Sofia Alvarez", "imgUrl":"public/img/users/7.jpg", "level":4, "rate":4 },
+
+ {  "fullname":"Liam O’Connor", "imgUrl":"public/img/users/8.jpg", "level":4, "rate":4 },
+
+{  "fullname":"Emma Frost", "imgUrl":"public/img/users/9.jpg", "level":5, "rate":5 },
+
+{  "fullname":"Noah Lee", "imgUrl":"public/img/users/10.jpg", "level":5, "rate":5 },
+
+{  "fullname":"Noah Lee", "imgUrl":"public/img/users/10.jpg", "level":5, "rate":5 }
+
+
+]

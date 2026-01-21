@@ -1,0 +1,6 @@
+{
+  "gigId": {"$oid": "GIG-id"},  
+  "byOwnerId": {"$oid": "OWNER-id"},  
+  "txt": "Did an amazing work",
+  "rate": 4 
+}
