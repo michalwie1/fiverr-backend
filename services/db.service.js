@@ -18,14 +18,29 @@ async function getCollection(collectionName) {
 	}
 }
 
-async function _connect() {
-	if (dbConn) return dbConn
+// async function _connect() {
+// 	console.log('dbConn',dbConn)
+// 	if (dbConn) return dbConn
     
-	try {
-		const client = await MongoClient.connect(config.dbURL)
-		return dbConn = client.db(config.dbName)
-	} catch (err) {
-		logger.error('Cannot Connect to DB', err)
-		throw err
-	}
+// 	try {
+// 		const client = await MongoClient.connect(config.dbURL)
+// 		return dbConn = client.db(config.dbName)
+// 	} catch (err) {
+// 		logger.error('Cannot Connect to DB', err)
+// 		throw err
+// 	}
+// }
+
+async function _connect() {
+    if (dbConn) return dbConn;
+
+    try {
+        const client = await MongoClient.connect(config.dbURL); // no need for useNewUrlParser/useUnifiedTopology
+        dbConn = client.db(config.dbName);
+        console.log('Connected to MongoDB:', config.dbName);
+        return dbConn;
+    } catch (err) {
+        console.error('Cannot Connect to DB', err);
+        throw err;
+    }
 }
