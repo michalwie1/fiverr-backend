@@ -82,7 +82,7 @@ async function remove(gigId) {
 		const criteria = {
 			_id: ObjectId.createFromHexString(gigId),
 		}
-		if (!isAdmin) criteria['owner._id'] = ownerId
+		if (!isAdmin) criteria['user._id'] = ownerId
 
 		const collection = await dbService.getCollection('gig')
 		const res = await collection.deleteOne(criteria)
@@ -152,65 +152,6 @@ async function removeGigMsg(gigId, msgId) {
 	}
 }
 
-// function _buildCriteria(filterBy) {
-//   const criteria = {}
-//   const { txt, maxBudget, loc, daysToMake, category, ownerLevel, ownerRate, avgResponseTime, sortField } = filterBy
-
-//   if (txt) {
-//     criteria.$or = [
-//       { title: { $regex: txt, $options: 'i' } },
-//       { description: { $regex: txt, $options: 'i' } }
-//     ]
-//   }
-
-//   if (maxBudget) {
-//     criteria.price = { $lte: Number(maxBudget) }
-//   }
-
-//   if (daysToMake) {
-//     criteria.daysToMake = { $lte: Number(daysToMake) }
-//   }
-
-//   if (category) {
-//     criteria.tags = { $in: [category] }
-//   }
-
-//     if (avgResponseTime) {
-//     criteria.avgResponseTime = { $gte: Number(avgResponseTime) }
-//   }
-
-//   const choiceFilters = []
-
-//   if (ownerLevel?.length > 0) {
-//     const levels = [...ownerLevel]
-//     if (levels.includes(4)) levels.push(5)
-//     choiceFilters.push({ 'gig.owner.level': { $in: levels.map(Number) } })
-//   }
-
-//   if (ownerRate?.length > 0) {
-//     const rates = [...ownerRate]
-//     if (rates.includes(4)) rates.push(5)
-//     choiceFilters.push({ 'gig.owner.rate': { $in: rates.map(Number) } })
-//   }
-
-//   if (loc?.length > 0) {
-//     choiceFilters.push({ loc: { $in: loc } })
-//   }
-
-//   if (choiceFilters.length > 0) {
-//     if (criteria.$or) {
-//       criteria.$and = [
-//         { $or: criteria.$or }, 
-//         { $or: choiceFilters }  
-//       ]
-//       delete criteria.$or
-//     } else {
-//       criteria.$or = choiceFilters
-//     }
-//   }
-
-//   return criteria
-// }
 
 function _buildCriteria(filterBy) {
   const gigCriteria = {}
@@ -276,44 +217,6 @@ function _buildSort(filterBy) {
   return { title: 1 }                
 }
 
-// function _getGigAggregation({ criteria = {}, sort = {title: 1} } = {}) {
-//     const gigAggregate = [
-//         { $match: criteria },
-//         { $sort: sort },
-//         {
-//             $lookup: {
-//                 from: 'owner',
-//                 localField: 'ownerId',
-//                 foreignField: '_id',
-//                 as: 'owner'
-//             }
-//         },
-//         { $unwind: '$owner' },
-//         {
-//             $project: {
-//                 title: 1,
-//                 price: 1,
-//                 daysToMake: 1,
-//                 description: 1,
-//                 avgResponseTime: 1,
-//                 loc: 1,
-//                 imgUrls: 1,
-//                 tags: 1,
-//                 categories: 1,
-//                 owner: {
-//                     _id: '$owner._id',
-//                     fullname: '$owner.fullname',
-//                     imgUrl: '$owner.imgUrl',
-//                     level: '$owner.level',
-//                     rate: '$owner.rate'
-//                 }
-//             }
-//         }
-		
-//     ]
-
-// 	return(gigAggregate)
-// }
 
 function _getGigAggregation({
   gigCriteria = {},
@@ -326,16 +229,16 @@ function _getGigAggregation({
 
     {
       $lookup: {
-        from: 'owner',
+        from: 'user',
         localField: 'ownerId',
         foreignField: '_id',
         as: 'owner'
       }
+      
     },
     { $unwind: '$owner' }
   ]
 
-  // 👇 seller details MUST be here
   if (sellerCriteria) {
     pipeline.push({ $match: sellerCriteria })
   }
@@ -354,11 +257,11 @@ function _getGigAggregation({
         tags: 1,
         categories: 1,
         owner: {
-          _id: '$owner._id',
-          fullname: '$owner.fullname',
-          imgUrl: '$owner.imgUrl',
-          level: '$owner.level',
-          rate: '$owner.rate'
+          _id: '$user._id',
+          fullname: '$user.fullname',
+          imgUrl: '$user.imgUrl',
+          level: '$user.level',
+          rate: '$user.rate'
         }
       }
     }

@@ -13,19 +13,6 @@ export async function getGigs(req, res) {
 			ownerLevel: req.query.ownerLevel?.split(',').map(Number) || [],
             ownerRate: req.query.ownerRate?.split(',').map(Number) || [],
             loc: req.query.loc?.split(',') || [],
-			// loc: req.query.loc || null, 
-			// loc: req.query.loc?.split(',') || [],
-			// loc: req.query.loc ? req.query.loc.split(',').filter(Boolean) : [],
-			// loc: req.query.loc  || [],
-			// ownerLevel: req.query.ownerLevel || null, 
-			// ownerRate: req.query.ownerRate || null, 
-			// ownerLevel: getQueryValue('ownerLevel') 
-            //     ? [].concat(getQueryValue('ownerLevel')).map(Number) 
-            //     : [],
-                
-            // ownerRate: getQueryValue('ownerRate') 
-            //     ? [].concat(getQueryValue('ownerRate')).map(Number) 
-            //     : [],
 			avgResponseTime: req.query.avgResponseTime || null, 
 			category: req.query.category || '', 
             sortField: req.query.sortField || 'recommended',

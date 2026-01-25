@@ -9,7 +9,7 @@ export const userService = {
 	update, // Update (Edit profile)
 	remove, // Delete (remove user)
 	query, // List (of users)
-	getByUserName, // Used for Login
+	getByUsername, // Used for Login
 }
 
 async function query(filterBy = {}) {
@@ -17,30 +17,6 @@ async function query(filterBy = {}) {
     try {
         const collection = await dbService.getCollection('user')
         var users = await collection.find(criteria).toArray()
-        // var users =await collection.aggregate([
-        //     {
-        //         $lookup: {
-        //         from: 'gigs',
-        //         localField: '_id',      
-        //         foreignField: 'userId', 
-        //         as: 'gigs'
-        //         }
-        //     },
-        //     {
-        //         $project: {
-        //         fullname: 1,
-        //         imgUrl: 1,
-        //         level: 1,
-        //         rate: 1,
-        //         gigs: {
-        //             _id: 1,
-        //             title: 1,
-        //             price: 1,
-        //             daysToMake: 1
-        //         }
-        //         }
-        //     }
-        //     ])
 
         
         users = users.map(user => {
@@ -82,7 +58,7 @@ async function getById(userId) {
     }
 }
 
-async function getByUserName(username) {
+async function getByUsername(username) {
 	try {
 		const collection = await dbService.getCollection('user')
 		const user = await collection.findOne({ username })
@@ -144,19 +120,19 @@ async function add(user) {
 
 function _buildCriteria(filterBy) {
 	const criteria = {}
-	// if (filterBy.txt) {
-	// 	const txtCriteria = { $regex: filterBy.txt, $options: 'i' }
-	// 	criteria.$or = [
-	// 		{
-	// 			username: txtCriteria,
-	// 		},
-	// 		{
-	// 			fullname: txtCriteria,
-	// 		},
-	// 	]
-	// }
-	// if (filterBy.minBalance) {
-	// 	criteria.score = { $gte: filterBy.minBalance }
-	// }
+	if (filterBy.txt) {
+		const txtCriteria = { $regex: filterBy.txt, $options: 'i' }
+		criteria.$or = [
+			{
+				username: txtCriteria,
+			},
+			{
+				fullname: txtCriteria,
+			},
+		]
+	}
+	if (filterBy.minBalance) {
+		criteria.score = { $gte: filterBy.minBalance }
+	}
 	return criteria
 }
