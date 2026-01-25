@@ -45,6 +45,7 @@ async function query(filterBy = {}) {
       sellerCriteria,
       sort
     })
+    console.log('gigAgg',gigAgg)
     return await collection.aggregate(gigAgg).toArray()
   } catch (err) {
     logger.error('cannot find gigs', err)
@@ -258,11 +259,11 @@ function _getGigAggregation({
         tags: 1,
         categories: 1,
         owner: {
-          _id: '$user._id',
-          fullname: '$user.fullname',
-          imgUrl: '$user.imgUrl',
-          level: '$user.level',
-          rate: '$user.rate'
+          _id: '$owner._id',
+          fullname: '$owner.fullname',
+          imgUrl: '$owner.imgUrl',
+          level: '$owner.level',
+          rate: '$owner.rate'
         }
       }
     }
