@@ -61,7 +61,7 @@ async function getById(gigId) {
 		// const gig = await collection.findOne(criteria)
 
 		var gig = await collection
-			.aggregate(_getGigAggregation({ criteria }))
+      .aggregate(_getGigAggregation({ gigCriteria: criteria }))
 			.toArray()
 
 		// const gig = gigs[0] || null
@@ -76,13 +76,14 @@ async function getById(gigId) {
 
 async function remove(gigId) {
 	const { loggedinUser } = asyncLocalStorage.getStore()
-	const { _id: ownerId, isAdmin } = loggedinUser
+	// const { _id: ownerId, isAdmin } = loggedinUser
+	const { _id: ownerId } = loggedinUser
 
 	try {
 		const criteria = {
 			_id: ObjectId.createFromHexString(gigId),
 		}
-		if (!isAdmin) criteria['user._id'] = ownerId
+		// if (!isAdmin) criteria['user._id'] = ownerId
 
 		const collection = await dbService.getCollection('gig')
 		const res = await collection.deleteOne(criteria)

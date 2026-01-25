@@ -19,7 +19,6 @@ export async function getGigs(req, res) {
 			// pageIdx: req.query.pageIdx,
 		}
 
-		console.log('req',req.query)
 		const gigs = await gigService.query(filterBy)
 		res.json(gigs)
 	} catch (err) {
@@ -33,7 +32,6 @@ export async function getGigById(req, res) {
 		const gigId = req.params.id
 		const gig = await gigService.getById(gigId)
 		res.json(gig)
-		console.log(gig)
 
 	} catch (err) {
 		logger.error('Failed to get gig', err)
@@ -60,9 +58,11 @@ export async function addGig(req, res) {
 
 export async function updateGig(req, res) {
 	const { loggedinUser, body: gig } = req
-    const { _id: userId, isAdmin } = loggedinUser
+    // const { _id: userId, isAdmin } = loggedinUser
+    const { _id: userId } = loggedinUser
 
-    if(!isAdmin && gig.owner._id !== userId) {
+    // if(!isAdmin && gig.owner._id !== userId) {
+    if(gig.owner._id !== userId) {
         res.status(403).send('Not your gig...')
         return
     }

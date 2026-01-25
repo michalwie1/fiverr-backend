@@ -49,3 +49,20 @@ export async function updateUser(req, res) {
         res.status(400).send({ err: 'Failed to update user' })
     }
 }
+
+
+export async function addOrder(req, res) {
+  try {
+    const buyerId = req.loggedinUser._id
+    const { gigId } = req.body
+
+    const order = await userService.addOrder({ buyerId, gigId })
+    res.json(order)
+  } catch (err) {
+    console.error('Failed addOrder', err)
+    res.status(500).send({ err: err.message })
+  }
+}
+
+
+

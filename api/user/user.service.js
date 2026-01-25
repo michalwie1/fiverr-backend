@@ -1,7 +1,10 @@
 import {dbService} from '../../services/db.service.js'
 import {logger} from '../../services/logger.service.js'
+import { getRandomIntInclusive } from '../../public/services/util.service.js'
+
 import {reviewService} from '../review/review.service.js'
 import { ObjectId } from 'mongodb'
+
 
 export const userService = {
 	add, // Create (Signup)
@@ -9,7 +12,8 @@ export const userService = {
 	update, // Update (Edit profile)
 	remove, // Delete (remove user)
 	query, // List (of users)
-	getByUserName, // Used for Login
+	getByUsername, // Used for Login
+    addOrder
 }
 
 async function query(filterBy = {}) {
@@ -82,7 +86,7 @@ async function getById(userId) {
     }
 }
 
-async function getByUserName(username) {
+async function getByUsername(username) {
 	try {
 		const collection = await dbService.getCollection('user')
 		const user = await collection.findOne({ username })
@@ -126,12 +130,13 @@ async function add(user) {
 	try {
 		// peek only updatable fields!
 		const userToAdd = {
-			username: user.username,
-			password: user.password,
-			fullname: user.fullname,
-			imgUrl: user.imgUrl,
-			isAdmin: user.isAdmin,
-			score: 100,
+			 _id: user._id, 
+            fullname: user.fullname,
+            username: user.username, 
+            imgUrl: user.imgUrl, 
+            level: getRandomIntInclusive(1,5),
+            rate: getRandomIntInclusive(1,5),
+            orders: [],
 		}
 		const collection = await dbService.getCollection('user')
 		await collection.insertOne(userToAdd)
@@ -160,3 +165,165 @@ function _buildCriteria(filterBy) {
 	// }
 	return criteria
 }
+
+// async function addOrder({ buyerId, gigId }) {
+//     console.log('part2')
+//   const gigCol = await dbService.getCollection('gig')
+//   const userCol = await dbService.getCollection('user')
+
+//   const gig = await gigCol.findOne({ _id: ObjectId.createFromHexString(gigId) })
+//   if (!gig) throw new Error('Gig not found')
+
+//   const order = {
+//     _id: ObjectId(),
+//     buyer: {
+//       id: new ObjectId(buyerId)
+//     },
+//     gig: {
+//       id: gig._id,
+//       title: gig.title,
+//       imgUrl: gig.imgUrls?.[0] || '',
+//       price: gig.price
+//     },
+//     status: 'pending',
+//     createdAt: Date.now()
+//   }
+
+//   await userCol.updateOne(
+//     { _id: gig.owner._id },
+//     { $push: { orders: order } }
+//   )
+
+//   return order
+// }
+
+// async function addOrder({ buyerId, gigId }) {
+//   const gigCol = await dbService.getCollection('gig')
+//   const userCol = await dbService.getCollection('user')
+
+//   const gig = await gigCol.findOne({
+//     _id: new ObjectId(gigId)
+//   })
+//   if (!gig) throw new Error('Gig not found')
+
+//   const order = {
+//     _id: new ObjectId(),
+//     buyer: {
+//       id: new ObjectId(buyerId)
+//     },
+//     gig: {
+//       id: gig._id,
+//       title: gig.title,
+//       imgUrl: gig.imgUrls?.[0] || '',
+//       price: gig.price
+//     },
+//     status: 'pending',
+//     createdAt: Date.now()
+//   }
+
+
+
+//   await userCol.updateOne(
+//     { _id: new ObjectId(gig.ownerId) },
+//     { $push: { orders: order } }
+//   )
+//   console.log('order', order)
+//   return order
+// }
+
+// async function addOrder({ buyerId, gigId }) {
+//   const gigCol = await dbService.getCollection('gig')
+//   const userCol = await dbService.getCollection('user')
+
+//   const gig = await gigCol.findOne({ _id: new ObjectId(gigId) })
+//   if (!gig) throw new Error('Gig not found')
+
+//   const order = {
+//     _id: new ObjectId(),
+//     buyer: { id: new ObjectId(buyerId) },
+//     gig: {
+//       id: gig._id,
+//       title: gig.title,
+//       imgUrl: gig.imgUrls?.[0] || '',
+//       price: gig.price
+//     },
+//     status: 'pending',
+//     createdAt: Date.now()
+//   }
+
+//   const res = await userCol.updateOne(
+//     { _id: gig.ownerId },
+//     { $push: { orders: order } }
+//   )
+//   console.log('res',res)
+
+//   if (!res.matchedCount) {
+//     throw new Error('Owner user not found')
+//   }
+
+//   return order
+// }
+
+async function addOrder({ buyerId, gigId }) {
+  const gigCol = await dbService.getCollection('gig')
+  const userCol = await dbService.getCollection('user')
+
+  // 1. Get gig
+  const gig = await gigCol.findOne({ _id: new ObjectId(gigId) })
+  if (!gig) throw new Error('Gig not found')
+
+  // 2. Prevent self-purchase
+  if (gig.ownerId.toString() === buyerId) {
+    throw new Error('Cannot order your own gig')
+  }
+
+  // 3. Create order (single source of truth)
+  const orderId = new ObjectId()
+
+  const baseOrder = {
+    _id: orderId,
+    gig: {
+      id: gig._id,
+      title: gig.title,
+      imgUrl: gig.imgUrls?.[0] || '',
+      price: gig.price
+    },
+    status: 'pending',
+    createdAt: Date.now()
+  }
+
+  // 4. Push to buyer
+  const buyerOrder = {
+    ...baseOrder,
+    role: 'buyer',
+    otherUserId: gig.ownerId
+  }
+
+  const buyerRes = await userCol.updateOne(
+    { _id: new ObjectId(buyerId) },
+    { $push: { orders: buyerOrder } }
+  )
+
+  if (!buyerRes.matchedCount) {
+    throw new Error('Buyer not found')
+  }
+
+  // 5. Push to seller
+  const sellerOrder = {
+    ...baseOrder,
+    role: 'seller',
+    otherUserId: new ObjectId(buyerId)
+  }
+
+  const sellerRes = await userCol.updateOne(
+    { _id: gig.ownerId },
+    { $push: { orders: sellerOrder } }
+  )
+
+  if (!sellerRes.matchedCount) {
+    throw new Error('Seller not found')
+  }
+
+  return baseOrder
+}
+

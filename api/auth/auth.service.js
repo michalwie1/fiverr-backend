@@ -1,8 +1,10 @@
 import Cryptr from 'cryptr'
 import bcrypt from 'bcrypt'
 
-import { userService } from '../user1/user1.service.js'
+import { userService } from '../user/user.service.js'
+import { getRandomIntInclusive } from '../../public/services/util.service.js'
 import { logger } from '../../services/logger.service.js'
+
 
 const cryptr = new Cryptr(process.env.SECRET || 'Secret-Puk-1234')
 
@@ -28,7 +30,7 @@ async function login(username, password) {
 	return user
 }
 
-async function signup({ username, password, fullname, imgUrl, isAdmin }) {
+async function signup({ username, password, fullname, imgUrl, level, rate, orders }) {
 	const saltRounds = 10
 
 	logger.debug(`auth.service - signup with username: ${username}, fullname: ${fullname}`)
@@ -38,15 +40,18 @@ async function signup({ username, password, fullname, imgUrl, isAdmin }) {
 	if (userExist) return Promise.reject('Username already taken')
 
 	const hash = await bcrypt.hash(password, saltRounds)
-	return userService.add({ username, password: hash, fullname, imgUrl, isAdmin })
+	return userService.add({ username, password: hash, fullname, imgUrl, level, rate, orders })
 }
 
 function getLoginToken(user) {
 	const userInfo = { 
         _id: user._id, 
-        fullname: user.fullname, 
-        score: user.score,
-        isAdmin: user.isAdmin,
+        fullname: user.fullname,
+		username: user.username, 
+        imgUrl: user.imgUrl, 
+		level: getRandomIntInclusive(1,5),
+		rate: getRandomIntInclusive(1,5),
+        orders: [],
     }
 	return cryptr.encrypt(JSON.stringify(userInfo))
 }

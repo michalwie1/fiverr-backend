@@ -9,7 +9,6 @@ export const reviewService = { query, remove, add }
 async function query(filterBy = {}) {
 	try {
 		const criteria = _buildCriteria(filterBy)
-        console.log(criteria)
 		const collection = await dbService.getCollection('review')
         
 		// var reviews = await collection.find().toArray()
@@ -63,9 +62,9 @@ async function remove(reviewId) {
 		const criteria = { _id: ObjectId.createFromHexString(reviewId) }
 
         // remove only if user is owner/admin
-		if (!loggedinUser.isAdmin) {
-            criteria.byUserId = ObjectId.createFromHexString(loggedinUser._id)
-        }
+		// if (!loggedinUser.isAdmin) {
+        //     criteria.byUserId = ObjectId.createFromHexString(loggedinUser._id)
+        // }
 
         const { deletedCount } = await collection.deleteOne(criteria)
 		return deletedCount
