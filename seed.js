@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker';
 import 'dotenv/config';
 
 // --- CONFIGURATION ---
-const MONGO_URL = process.env.MONGO_URL || 'mongodb+srv://michaliwieder_db_user:hUTx4KAxrzPQQTpl@projects.fl3silj.mongodb.net/'
+const MONGO_URL = process.env.MONGO_URL || ''
 const DB_NAME = 'ninner';
 
 const NUM_USERS = 20;
