@@ -3,7 +3,6 @@ import { gigService } from './gig.service.js'
 
 export async function getGigs(req, res) {
 	// const getQueryValue = (field) => req.query[field] || req.query[`${field}[]`]
-	
 	try {
 		const filterBy = {
 			txt: req.query.txt || '',

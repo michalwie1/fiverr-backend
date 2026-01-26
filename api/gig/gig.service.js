@@ -45,7 +45,6 @@ async function query(filterBy = {}) {
       sellerCriteria,
       sort
     })
-    console.log('gigAgg',gigAgg)
     return await collection.aggregate(gigAgg).toArray()
   } catch (err) {
     logger.error('cannot find gigs', err)
@@ -170,6 +169,8 @@ function _buildCriteria(filterBy) {
     avgResponseTime
   } = filterBy
 
+
+
   // ---- gig fields ----
   if (txt) {
     gigCriteria.$or = [
@@ -180,9 +181,8 @@ function _buildCriteria(filterBy) {
 
   if (maxBudget) gigCriteria.price = { $lte: +maxBudget }
   if (daysToMake) gigCriteria.daysToMake = { $lte: +daysToMake }
-  if (category) gigCriteria.tags = { $in: [category] }
+  if (category) gigCriteria.categories = { $in: [category] }
   if (avgResponseTime) gigCriteria.avgResponseTime = { $gte: +avgResponseTime }
-
   // ---- seller-details OR ----
   if (loc?.length) {
     sellerOr.push({ loc: { $in: loc } })
@@ -226,7 +226,11 @@ function _getGigAggregation({
   sort = { title: 1 }
 } = {}) {
 
-  const pipeline = [
+  const pipeline = []
+  if (Object.keys(gigCriteria).length) {
+    pipeline.push({ $match: gigCriteria })
+  }
+  pipeline.push(
     { $match: gigCriteria },
 
     {
@@ -239,7 +243,8 @@ function _getGigAggregation({
       
     },
     { $unwind: '$owner' }
-  ]
+  )
+
 
   if (sellerCriteria) {
     pipeline.push({ $match: sellerCriteria })
@@ -268,6 +273,7 @@ function _getGigAggregation({
       }
     }
   )
+console.log('MATCHING WITH:', JSON.stringify(gigCriteria))
 
   return pipeline
 }
