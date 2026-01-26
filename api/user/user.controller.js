@@ -51,18 +51,35 @@ export async function updateUser(req, res) {
 }
 
 
+// export async function addOrder(req, res) {
+//     try {
+//         const buyerId = req.loggedinUser._id
+//         const { gigId } = req.body
+
+//     const order = await userService.addOrder({ buyerId, gigId })
+//     res.json(order)
+//   } catch (err) {
+//     console.error('Failed addOrder', err)
+//     res.status(500).send({ err: err.message })
+//   }
+// }
+
 export async function addOrder(req, res) {
   try {
     const buyerId = req.loggedinUser._id
     const { gigId } = req.body
 
     const order = await userService.addOrder({ buyerId, gigId })
-    res.json(order)
+
+    const updatedBuyer = await userService.getById(buyerId)
+
+    res.json({ order, updatedUser: updatedBuyer })
   } catch (err) {
     console.error('Failed addOrder', err)
     res.status(500).send({ err: err.message })
   }
 }
+
 
 
 
