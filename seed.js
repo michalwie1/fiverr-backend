@@ -130,16 +130,16 @@ const CATEGORIES = [
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767815462/1_ae2w2q.webp",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1769441436/pexels-photo-905163.jpeg_vhzzas.jpg", 
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1769441462/pexels-photo-265087_lmsdai.jpg", 
-      "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "https://images.pexels.com/photos/3194519/pexels-photo-3194519.jpeg",
-        "https://images.pexels.com/photos/7661185/pexels-photo-7661185.jpeg",
-        "https://images.pexels.com/photos/6476808/pexels-photo-6476808.jpeg",
-        "https://images.pexels.com/photos/6956226/pexels-photo-6956226.jpeg",
-        "https://images.pexels.com/photos/7947707/pexels-photo-7947707.jpeg",
-        "https://images.pexels.com/photos/7661068/pexels-photo-7661068.jpeg",
-        "https://images.pexels.com/photos/15635241/pexels-photo-15635241.jpeg",
-        "https://images.pexels.com/photos/6476595/pexels-photo-6476595.jpeg",
-        "https://images.pexels.com/photos/7279706/pexels-photo-7279706.jpeg",
+      "https://res.cloudinary.com/dwc11osoz/image/upload/v1769444716/pexels-photo-590016_xqtrgs.jpg",
+          'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445434/batch_uploads/ar661gjvzazkkqqoq3fl.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445434/batch_uploads/vykgcydbzmf6okkcw1zi.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445435/batch_uploads/ber6dczjcxcx4y5becct.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445436/batch_uploads/sqwnjtmak36xk0owfyok.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445437/batch_uploads/y5rymphewh77gana1n53.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445438/batch_uploads/wlndznr0tenhatnvnxfl.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445439/batch_uploads/ko4bfdipt35jg2rmmksh.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445441/batch_uploads/zecjypvbpacuixuslapa.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445442/batch_uploads/xnlz1bllyx65le86x0yh.jpg'
     ]
   },
   { 
@@ -155,16 +155,15 @@ const CATEGORIES = [
     ],
     // 10 images - 5 gigs in this category, each one 2 images
     images: [
-        "https://images.pexels.com/photos/2510428/pexels-photo-2510428.jpeg?auto=compress&cs=tinysrgb&w=800", // Editing timeline
-        "https://images.pexels.com/photos/3062545/pexels-photo-3062545.jpeg?auto=compress&cs=tinysrgb&w=800", // Camera
-        "https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=800",  // Movie clapboard
-        "https://images.pexels.com/photos/2443292/pexels-photo-2443292.jpeg",
-        "https://images.pexels.com/photos/88476/pexels-photo-88476.jpeg",
-        "https://images.pexels.com/photos/163077/mario-yoschi-figures-funny-163077.jpeg",
-        "https://images.pexels.com/photos/29505140/pexels-photo-29505140.jpeg",
-        "https://images.pexels.com/photos/32538883/pexels-photo-32538883.jpeg",
-        "https://images.pexels.com/photos/30310578/pexels-photo-30310578.jpeg",
-        "hhttps://images.pexels.com/photos/12950575/pexels-photo-12950575.jpeg",
+         'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445524/batch_uploads/mzoidn7uuzrch8a6pd8c.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445526/batch_uploads/l8ipt3sxcwbv33yhbcmb.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445527/batch_uploads/d14oqjyfpyp7p37whffn.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445528/batch_uploads/swfa5uvph9x9dvswp9be.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445529/batch_uploads/igofvo9efu2zbcczltbn.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445530/batch_uploads/tmjp1u4qmdsv2krrsij0.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445531/batch_uploads/d5jqqeptgnpogi9llvwr.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445532/batch_uploads/woknbifkriodyl9agfg9.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445533/batch_uploads/iokxdffud4an700keif6.jpg'
           ]
   },
   { 
@@ -180,18 +179,18 @@ const CATEGORIES = [
     ],
     // 12 images - 6 gigs in this category, each one 2 images
     images: [
-        "https://images.pexels.com/photos/3747163/pexels-photo-3747163.jpeg?auto=compress&cs=tinysrgb&w=800", // Typing
-        "https://images.pexels.com/photos/210661/pexels-photo-210661.jpeg?auto=compress&cs=tinysrgb&w=800", // Notebook
-        "https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "https://images.pexels.com/photos/6830864/pexels-photo-6830864.jpeg",
-        "https://images.pexels.com/photos/34587/pexels-photo.jpg",
-        "https://images.pexels.com/photos/6929210/pexels-photo-6929210.jpeg",
-        "https://images.pexels.com/photos/7333599/pexels-photo-7333599.jpeg",
-        "https://images.pexels.com/photos/6929269/pexels-photo-6929269.jpeg",
-        "https://images.pexels.com/photos/1119792/pexels-photo-1119792.jpeg",
-        "https://images.pexels.com/photos/7335369/pexels-photo-7335369.jpeg",
-        "https://images.pexels.com/photos/746500/pexels-photo-746500.jpeg",
-        "https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg",
+        'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445553/batch_uploads/csliutdxzlnqhd08pfd5.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445554/batch_uploads/ypyuzcwu0ktvqbbsmsll.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445555/batch_uploads/jwad7qwl2bgf6hqnmstq.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445556/batch_uploads/vcbh3toyjq2k6tsivlgz.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445557/batch_uploads/k0f50joicvkbfnrqggns.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445558/batch_uploads/ojwchjdqydlfuvl8b8th.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445558/batch_uploads/mqnfeer6zyhlfsnxphli.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445559/batch_uploads/cyzjkrgwskyvxxucifx6.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445560/batch_uploads/lszvcpdstnk6z8rspvp1.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445562/batch_uploads/huo2hdb4j6fa6lb4nzql.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445563/batch_uploads/vpd1um6qek42cqitp5hk.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445564/batch_uploads/mpaxowb4rpwrboivuqie.jpg'
     ]
   },
   { 
@@ -206,16 +205,16 @@ const CATEGORIES = [
     ],
     // 10 images - 5 gigs in this category, each one 2 images
     images: [
-        "https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg?auto=compress&cs=tinysrgb&w=800", // Guitar/Studio
-        "https://images.pexels.com/photos/63703/pexels-photo-63703.jpeg?auto=compress&cs=tinysrgb&w=800",  // Microphone
-        "https://images.pexels.com/photos/159376/turntable-top-view-audio-equipment-159376.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "https://images.pexels.com/photos/1534/man-person-technology-music.jpg",
-        "https://images.pexels.com/photos/2426085/pexels-photo-2426085.jpeg",
-        "https://images.pexels.com/photos/164945/pexels-photo-164945.jpeg",
-        "https://images.pexels.com/photos/8132786/pexels-photo-8132786.jpeg",
-        "https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg",
-        "https://images.pexels.com/photos/3784566/pexels-photo-3784566.jpeg",
-        "https://images.pexels.com/photos/10433496/pexels-photo-10433496.jpeg",
+        'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445595/batch_uploads/fclkzrxxck2ffgwp1vei.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445596/batch_uploads/jsejfosnpese85mw9aun.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445599/batch_uploads/trukabwdqmbf77gzzizz.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445600/batch_uploads/glwrcptybtopuwlbau53.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445601/batch_uploads/owi95dargv9gyuxil7dt.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445602/batch_uploads/ish7revbjyctzciofang.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445604/batch_uploads/s3crtsxg6tgg07ud1qqs.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445605/batch_uploads/sus38vixooh6gii1ztyi.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445606/batch_uploads/hkwxvgyuvqxsixp0j1vc.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445608/batch_uploads/lklzypcgzyghu5krcq8e.jpg'
     ]
   },
   { 
@@ -229,16 +228,16 @@ const CATEGORIES = [
     ],
     // 10 images - 5 gigs in this category, each one 2 images
     images: [
-        "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800", // Meeting
-        "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=800", // Handshake
-        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg",
-        "https://images.pexels.com/photos/6829519/pexels-photo-6829519.jpeg",
-        "https://images.pexels.com/photos/9301244/pexels-photo-9301244.jpeg",
-        "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg",
-        "https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg",
-        "https://images.pexels.com/photos/1181395/pexels-photo-1181395.jpeg",
-        "https://images.pexels.com/photos/4623080/pexels-photo-4623080.jpeg",
+      'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445638/batch_uploads/pvc0wpbgfyr2lbvmwj8i.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445640/batch_uploads/u0ab1di30h6zw0aeg5dk.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445641/batch_uploads/lwkilybj2ot9fiz8xadu.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445642/batch_uploads/eiwuzjquucng02vtj7lo.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445643/batch_uploads/asnpatecyfbrwbb9vcol.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445645/batch_uploads/v0mddnhmk73qgj91kzfi.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445647/batch_uploads/w1mwov7nh0tigqy2cegh.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445649/batch_uploads/jshufm1fa2daua2c6hhv.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445650/batch_uploads/nuo4ut0jrvgwo9pn4zqq.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445651/batch_uploads/farryejdhykyzvvl6shq.jpg'
     ]
   },
   { 
@@ -251,16 +250,15 @@ const CATEGORIES = [
     'I will help you with your financial decisions'],
     // 10 images - 5 gigs in this category, each one 2 images
     images: [
-        "https://images.pexels.com/photos/164636/pexels-photo-164636.jpeg?auto=compress&cs=tinysrgb&w=800", // Calculator
-        "https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg?auto=compress&cs=tinysrgb&w=800", // Spreadsheets
-        "https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "https://images.pexels.com/photos/4968653/pexels-photo-4968653.jpeg",
-        "https://images.pexels.com/photos/14354105/pexels-photo-14354105.jpeg",
-        "https://images.pexels.com/photos/3943738/pexels-photo-3943738.jpeg",
-        "https://images.pexels.com/photos/6694866/pexels-photo-6694866.jpeg",
-        "https://images.pexels.com/photos/5909821/pexels-photo-5909821.jpeg",
-        "https://images.pexels.com/photos/4021810/pexels-photo-4021810.jpeg",
-        "https://images.pexels.com/photos/3943732/pexels-photo-3943732.jpeg",
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445670/batch_uploads/zmlownypck4wuntxdtxc.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445671/batch_uploads/mlnzca9rmivwutatjlma.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445672/batch_uploads/afkcmmjqi9qkeqpxogo0.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445673/batch_uploads/jfctofgiarzxh4cqijlc.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445674/batch_uploads/j6rcdeweirznp1b3qpwx.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445676/batch_uploads/lq24qtwg63chv6ffutgq.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445678/batch_uploads/vleyzyzohflssyjofqtu.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445681/batch_uploads/n9snhcekoaccc0l2o2qe.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445682/batch_uploads/zywtmnnl7kcmdckniftp.jpg'
 
     ]
   },
@@ -285,16 +283,15 @@ const CATEGORIES = [
     ],
     // 10 images - 5 gigs in this category, each one 2 images
     images: [
-        "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800", // Robot Hand
-        "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800", // Tech network
-        "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "https://images.pexels.com/photos/30869149/pexels-photo-30869149.jpeg",   // Digital art
-        "https://images.pexels.com/photos/30530416/pexels-photo-30530416.jpeg",   // Digital art
-        "https://images.pexels.com/photos/18068728/pexels-photo-18068728.png",   // Digital art
-        "https://images.pexels.com/photos/18069694/pexels-photo-18069694.png",   // Digital art
-        "https://images.pexels.com/photos/18069813/pexels-photo-18069813.png",   // Digital art
-        "https://images.pexels.com/photos/18069697/pexels-photo-18069697.png",   // Digital art
-        "https://images.pexels.com/photos/30530430/pexels-photo-30530430.jpeg",   // Digital art
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445703/batch_uploads/vafejuiepvos2pnhravu.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445704/batch_uploads/yxh1gbnne5ja82r3vjjm.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445705/batch_uploads/xmobxm7soal7de0oykvk.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445706/batch_uploads/pjwwtamapbzow1ycatip.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445707/batch_uploads/crakzk2pk8tcji1tbvyh.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445708/batch_uploads/mz5ooudvcrhcloexrn4w.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445709/batch_uploads/ue6s2gqtqbyp3jhilzfo.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445710/batch_uploads/iap1uasayrax3cfrjm44.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445712/batch_uploads/bbywlnbacoibvkffzxpu.jpg'
     ]
   },
     { 
@@ -324,16 +321,16 @@ const CATEGORIES = [
     ],
     // 10 images - 5 gigs in this category, each one 2 images
     images: [
-      "https://images.pexels.com/photos/8376318/pexels-photo-8376318.jpeg",
-      "https://images.pexels.com/photos/8376302/pexels-photo-8376302.jpeg",
-      "https://images.pexels.com/photos/7089301/pexels-photo-7089301.jpeg",
-      "https://images.pexels.com/photos/3958426/pexels-photo-3958426.jpeg",
-      "https://images.pexels.com/photos/8376263/pexels-photo-8376263.jpeg",
-      "https://images.pexels.com/photos/4266939/pexels-photo-4266939.jpeg",
-      "https://images.pexels.com/photos/18512944/pexels-photo-18512944.jpeg",
-      "https://images.pexels.com/photos/7108395/pexels-photo-7108395.jpeg",
-      "https://images.pexels.com/photos/4100678/pexels-photo-4100678.jpeg",
-      "https://images.pexels.com/photos/8439695/pexels-photo-8439695.jpeg",
+ 'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445736/batch_uploads/njeufcopx7tsv7gdlp5w.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445737/batch_uploads/tjqakeblhlwvr85bjwha.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445738/batch_uploads/cy6qqsudwvdxxtccakas.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445740/batch_uploads/ehbfy47boffumzbo6zy7.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445742/batch_uploads/ikzvwuc300ttxvgfgpv7.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445743/batch_uploads/zdidic5ofqc0jwznrdtc.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445744/batch_uploads/bicnfapeygiib4cuefio.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445745/batch_uploads/jbzlvsqaytnfp471gzd8.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445746/batch_uploads/irmmpheaitexmn0hjgmo.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445747/batch_uploads/h1rpvygoh5bobhnxwdyb.jpg'
     ]
   }
 ];
@@ -371,23 +368,16 @@ async function seed(categories) {
     const userImgs = [
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767815206/5_wyyray.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767814538/6_eo9pus.jpg",
-      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200",
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200",
-      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200",
-      "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=200",
-      "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg",
-      "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
-      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
-      "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg",
-      "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
-      "https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg",
-      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg",
-      "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
-      "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg",
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg",
-      "https://images.pexels.com/photos/936090/pexels-photo-936090.jpeg",
-      "https://images.pexels.com/photos/29148928/pexels-photo-29148928.jpeg",
-      "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg",
+   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445820/batch_uploads/cfygaizbeah9mvozlzpq.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445822/batch_uploads/jbdj2qocxftttl5vmivu.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445823/batch_uploads/hocxdhzrfbsjov2whwpj.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445824/batch_uploads/muh9yd0pbryhokvody6n.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445826/batch_uploads/wklmw1h0ya81nirl1jnh.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445826/batch_uploads/kakmihexkehxjrj5v4kf.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445828/batch_uploads/q1pptahlg6mifbrgperr.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445828/batch_uploads/etf6wo1qhvpvh4vpcnob.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445830/batch_uploads/dzu13rusl3w9pqd6f7uq.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445831/batch_uploads/t4lzgn8gexklokpurvnc.jpg',
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767814558/2_sofpjc.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767814562/1_nmhwxf.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767815192/7_ay36fx.jpg",
@@ -407,7 +397,7 @@ async function seed(categories) {
         username: faker.internet.username(),
         imgUrl: faker.helpers.arrayElement(shuffledUserImgs),
         level: faker.number.int({ min: 1, max: 5 }),
-        rate: Number(faker.number.float({ min: 3, max: 5 }).toFixed(1)),
+        rate: Number(faker.number.float({ min: 3.8, max: 5 }).toFixed(1)),
         password: 'hashedpassword',
         orders: [],
         isAdmin: false

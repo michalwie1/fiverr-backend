@@ -213,6 +213,7 @@ function _buildCriteria(filterBy) {
 function _buildSort(filterBy) {
   const { sortField } = filterBy
 
+  // if (sortField === 'recommended') return { }
   if (sortField === 'lowest price') return { price: 1 }       
   if (sortField === 'newest') return { _id: -1 } 
 
