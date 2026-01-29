@@ -68,5 +68,26 @@ export async function addOrder(req, res) {
 }
 
 
+export async function updateOrder(req, res) {
+  try {
+    // console.log('user?',req.loggedinUser._id)
+    const { orderId, newStatus } = req.body
+    const userId = req.loggedinUser._id
+    console.log('userId', userId)
+    const updatedUser = await userService.updateOrderStatus(
+      userId,
+      orderId,
+      newStatus
+    )
+
+    res.send(updatedUser)
+  } catch (err) {
+    logger.error('Failed to update order', err)
+    res.status(400).send({ err: 'Failed to update order' })
+  }
+}
+
+
+
 
 

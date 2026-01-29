@@ -13,7 +13,8 @@ export const userService = {
 	remove, // Delete (remove user)
 	query, // List (of users)
 	getByUsername, // Used for Login
-    addOrder
+  addOrder,
+  updateOrderStatus
 }
 
 async function query(filterBy = {}) {
@@ -115,7 +116,6 @@ async function update(user) {
         const userToSave = {
             _id: ObjectId.createFromHexString(user._id), // needed for the returnd obj
             fullname: user.fullname,
-            score: user.score,
         }
         const collection = await dbService.getCollection('user')
         await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
@@ -166,118 +166,18 @@ function _buildCriteria(filterBy) {
 	return criteria
 }
 
-// async function addOrder({ buyerId, gigId }) {
-//     console.log('part2')
-//   const gigCol = await dbService.getCollection('gig')
-//   const userCol = await dbService.getCollection('user')
-
-//   const gig = await gigCol.findOne({ _id: ObjectId.createFromHexString(gigId) })
-//   if (!gig) throw new Error('Gig not found')
-
-//   const order = {
-//     _id: ObjectId(),
-//     buyer: {
-//       id: new ObjectId(buyerId)
-//     },
-//     gig: {
-//       id: gig._id,
-//       title: gig.title,
-//       imgUrl: gig.imgUrls?.[0] || '',
-//       price: gig.price
-//     },
-//     status: 'pending',
-//     createdAt: Date.now()
-//   }
-
-//   await userCol.updateOne(
-//     { _id: gig.owner._id },
-//     { $push: { orders: order } }
-//   )
-
-//   return order
-// }
-
-// async function addOrder({ buyerId, gigId }) {
-//   const gigCol = await dbService.getCollection('gig')
-//   const userCol = await dbService.getCollection('user')
-
-//   const gig = await gigCol.findOne({
-//     _id: new ObjectId(gigId)
-//   })
-//   if (!gig) throw new Error('Gig not found')
-
-//   const order = {
-//     _id: new ObjectId(),
-//     buyer: {
-//       id: new ObjectId(buyerId)
-//     },
-//     gig: {
-//       id: gig._id,
-//       title: gig.title,
-//       imgUrl: gig.imgUrls?.[0] || '',
-//       price: gig.price
-//     },
-//     status: 'pending',
-//     createdAt: Date.now()
-//   }
-
-
-
-//   await userCol.updateOne(
-//     { _id: new ObjectId(gig.ownerId) },
-//     { $push: { orders: order } }
-//   )
-//   console.log('order', order)
-//   return order
-// }
-
-// async function addOrder({ buyerId, gigId }) {
-//   const gigCol = await dbService.getCollection('gig')
-//   const userCol = await dbService.getCollection('user')
-
-//   const gig = await gigCol.findOne({ _id: new ObjectId(gigId) })
-//   if (!gig) throw new Error('Gig not found')
-
-//   const order = {
-//     _id: new ObjectId(),
-//     buyer: { id: new ObjectId(buyerId) },
-//     gig: {
-//       id: gig._id,
-//       title: gig.title,
-//       imgUrl: gig.imgUrls?.[0] || '',
-//       price: gig.price
-//     },
-//     status: 'pending',
-//     createdAt: Date.now()
-//   }
-
-//   const res = await userCol.updateOne(
-//     { _id: gig.ownerId },
-//     { $push: { orders: order } }
-//   )
-//   console.log('res',res)
-
-//   if (!res.matchedCount) {
-//     throw new Error('Owner user not found')
-//   }
-
-//   return order
-// }
 
 async function addOrder({ buyerId, gigId }) {
   const gigCol = await dbService.getCollection('gig')
   const userCol = await dbService.getCollection('user')
-
-  // 1. Get gig
+  
   const gig = await gigCol.findOne({ _id: new ObjectId(gigId) })
   if (!gig) throw new Error('Gig not found')
 
-  // 2. Prevent self-purchase
   if (gig.ownerId.toString() === buyerId) {
     throw new Error('Cannot order your own gig')
   }
 
-  // 3. Create order (single source of truth)
   const orderId = new ObjectId()
 
   const baseOrder = {
@@ -325,5 +225,16 @@ async function addOrder({ buyerId, gigId }) {
   }
 
   return baseOrder
+}
+
+ async function updateOrderStatus(userId, orderId, newStatus) {
+  const collection = await dbService.getCollection('user')
+
+  await collection.updateOne(
+    { _id: new ObjectId(userId), 'orders._id': new ObjectId(orderId) },
+    { $set: { 'orders.$.status': newStatus } }
+  )
+
+  return await collection.findOne({ _id: new ObjectId(userId) })
 }
 

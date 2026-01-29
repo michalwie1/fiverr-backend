@@ -452,7 +452,7 @@ async function seed(categories) {
 
       const orderId = new ObjectId()
       const createdAt = Date.now()
-      const status = faker.helpers.arrayElement(['pending', 'approved', 'in-progress', 'completed'])
+      const status = faker.helpers.arrayElement(['pending', 'approved', 'in-progress', 'rejected'])
 
       const gigSnapshot = {
         id: gig._id,
