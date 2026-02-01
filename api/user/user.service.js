@@ -1,6 +1,6 @@
 import {dbService} from '../../services/db.service.js'
 import {logger} from '../../services/logger.service.js'
-import { getRandomIntInclusive } from '../../public/services/util.service.js'
+import { getRandomIntInclusive } from '../../services/util.service.js'
 
 import {reviewService} from '../review/review.service.js'
 import { ObjectId } from 'mongodb'

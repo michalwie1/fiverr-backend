@@ -2,7 +2,7 @@ import Cryptr from 'cryptr'
 import bcrypt from 'bcrypt'
 
 import { userService } from '../user/user.service.js'
-import { getRandomIntInclusive } from '../../public/services/util.service.js'
+import { getRandomIntInclusive } from '../../services/util.service.js'
 import { logger } from '../../services/logger.service.js'
 
 
