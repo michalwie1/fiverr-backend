@@ -8,23 +8,14 @@ cloudinary.config({
 });
 
 const imageUrls = [
-     "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200",
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200",
-      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200",
-      "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=200",
-      "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg",
-      "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
-      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
-      "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg",
-      "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
-      "https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg",
-      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg",
-      "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
-      "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg",
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg",
-      "https://images.pexels.com/photos/936090/pexels-photo-936090.jpeg",
-      "https://images.pexels.com/photos/29148928/pexels-photo-29148928.jpeg",
-      "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg",
+  "https://images.pexels.com/photos/7195113/pexels-photo-7195113.jpeg",
+  "https://images.pexels.com/photos/8292879/pexels-photo-8292879.jpeg",
+  "https://images.pexels.com/photos/7731323/pexels-photo-7731323.jpeg",
+  "https://images.pexels.com/photos/4960341/pexels-photo-4960341.jpeg",
+  "https://images.pexels.com/photos/7111487/pexels-photo-7111487.jpeg",
+
+
+
 ];
 
 async function uploadBatch() {

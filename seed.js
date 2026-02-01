@@ -34,7 +34,7 @@ const CATEGORIES = [
       'I will design you next flyer',
       'I will help you design a working adds for you business'
     ],
-    // graphics-design - 16 images - 8 gigs in this category, each one 2 images
+    // graphics-design - 33 images - 11 gigs in this category, each one 2 images
     images: [
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767807554/3_ib4noj.webp",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767808442/create-professional-minimalist-logo-design-for-your-business_1_a52ybl.webp",
@@ -50,8 +50,13 @@ const CATEGORIES = [
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767808893/df24de486cf2a5f6e4ed84d56f02e9fd04b1140c_wmsh0d.webp",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767811749/0cbc5cf5eae87145cd9f9d829987072f7171fc61_dzap0q.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767811744/0301cf0849dd9b138a98fe32a760c9f2be9b3972_y6omb2.jpg",
-      "https://res.cloudinary.com/dwc11osoz/image/upload/v1767811717/31d8d73a774d38b972b59c99cbe16883ea3e3233_dqtggg.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1769441026/designer-board-typo-word_n835sn.jpg",
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954289/batch_uploads/odkndmjfixrv7yrayqrl.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769958946/pexels-photo-14037332_tzukoc.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769959023/pexels-photo_uutmby.jpg',
+
+  "https://res.cloudinary.com/dwc11osoz/image/upload/v1769959324/pexels-photo-12760383_o6zfqu.jpg"
+
         ]
   },
   { 
@@ -77,15 +82,12 @@ const CATEGORIES = [
 'I will improve your website accessibility',
 
     ],
-     // 16 images - 8 gigs in this category, each one 2 images
+     // 29 images - 8 gigs in this category, each one 2 images
     images: [
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767811865/siyehyrmuw23gwertpk3_qjpzmw.gif",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767807709/5_ylyqej.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767807708/3_v5jggj.jpg",
-      "https://res.cloudinary.com/dwc11osoz/image/upload/v1767813793/f8bc3454c2a59c2dcdf117b050010e96c81f30ce_gejo2n.png",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767813514/bf85aad5c0bcebf58d65f9fa1b8c043aa7d23548_q2zohw.jpg",
-      "https://res.cloudinary.com/dwc11osoz/image/upload/v1767807709/5_ylyqej.jpg",
-      "https://res.cloudinary.com/dwc11osoz/image/upload/v1767807709/5_ylyqej.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767813910/ccfa3b268ea8434ee0c0fee2b3f6e526bf07538c_k9op0j.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767813793/f8bc3454c2a59c2dcdf117b050010e96c81f30ce_gejo2n.png",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767813842/16726841663ef840b9f845d2cc6bac74c0957266_rhvu1j.jpg",
@@ -95,6 +97,22 @@ const CATEGORIES = [
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1769441287/pexels-photo-6804068_rm3qav.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1769441281/pexels-photo-7988742_lfbm7k.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1769441326/pexels-photo-2061168_zky9oj.jpg",
+      'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954472/batch_uploads/genshknbhop1nxkzxpzy.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954473/batch_uploads/ckbbob5ypt4q5mufeoyz.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954474/batch_uploads/d3gncatogobuvl43atus.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954475/batch_uploads/xgyx46vackvgniwemsdq.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954476/batch_uploads/d1tis81ey7zuf2s8kiyu.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954477/batch_uploads/um6cbvv6iexwwvlsvmxq.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954478/batch_uploads/miaml9oyoumwolkbrj9z.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954479/batch_uploads/acafx46v4b1dlznlpprc.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954480/batch_uploads/do8qwyltffp155ukgml7.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954481/batch_uploads/bii7aeirobqwxca9roxn.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954482/batch_uploads/ljxvd4jewq3gxjmegi98.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954483/batch_uploads/vurqu9sc8kvx1y6yglex.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954487/batch_uploads/i3lum6qojztefbnbwa8p.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954488/batch_uploads/upthbqf0gdxtkkye6ylk.jpg',
+  // 'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954489/batch_uploads/zfqpy0od3tdzstapjjif.jpg',
+  // 'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954490/batch_uploads/v0jhy7jvq9bkw8w7imsm.jpg'
     ]
   },
   { 
@@ -122,7 +140,7 @@ const CATEGORIES = [
   'I will consult on brand positioning and marketing strategy',
   'I will optimize your online store for sales and conversions'
 ],
-    // 16 images - 8 gigs in this category, each one 2 images
+    // 33 images - 8 gigs in this category, each one 2 images
     images: [
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767815457/0c07657592112ebe8a2cc8d5765773d5aed66f47_m7ni27.webp",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767815451/4_xdcwvc.jpg",
@@ -139,7 +157,24 @@ const CATEGORIES = [
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445438/batch_uploads/wlndznr0tenhatnvnxfl.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445439/batch_uploads/ko4bfdipt35jg2rmmksh.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445441/batch_uploads/zecjypvbpacuixuslapa.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445442/batch_uploads/xnlz1bllyx65le86x0yh.jpg'
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445442/batch_uploads/xnlz1bllyx65le86x0yh.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954958/batch_uploads/gusvvnknrcraxfuwoh2s.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954959/batch_uploads/dv7dnhifvsooctxx2qxl.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954960/batch_uploads/g36zbcopvyz1b32jtk5c.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954961/batch_uploads/rmts2zbtf0lsfqv9aops.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954962/batch_uploads/piqai77jnjsmxbcippmx.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954963/batch_uploads/n1fjzbfk2jlpkc3mlrut.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954964/batch_uploads/kdazltyxzgpkjkqdajlb.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954964/batch_uploads/ocfwc35fqwwhmbz8ij6x.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954966/batch_uploads/r7pi0w737u0qr5rpbelw.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954967/batch_uploads/u1zploerucwedkqo5e0g.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954969/batch_uploads/omqinfvuojpqbyt8ztcm.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954971/batch_uploads/xdbvnaa4jvudhw9zqljo.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954971/batch_uploads/onbagbidap5pdfklhb0r.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954972/batch_uploads/aq0miaks0h7fzqeqv7zp.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954974/batch_uploads/fgfvbpvsh8wyewfbleir.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954976/batch_uploads/hwtaa83b8li6snoh5wvu.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769954978/batch_uploads/mk8giflbkvztxh3wivws.jpg'
     ]
   },
   { 
@@ -152,6 +187,22 @@ const CATEGORIES = [
       'I will create motion graphics animations',
 'I will edit and enhance your videos professionally',
 
+  'I will create engaging social media video ads',
+  'I will animate your logo with smooth motion',
+  'I will edit cinematic videos with color grading',
+  'I will create short-form videos for TikTok and Reels',
+  'I will produce a professional promo video',
+  'I will create eye-catching video intros and outros',
+  'I will animate characters for your video project',
+  'I will add transitions and effects to your videos',
+  'I will create a professional slideshow video',
+  'I will edit videos for Instagram, YouTube Shorts, and Reels',
+  'I will create animated text and typography videos',
+  'I will enhance your video with sound effects and music',
+  'I will create a whiteboard animation video',
+  'I will edit raw footage into a polished video',
+  'I will create motion graphics for ads and presentations'
+
     ],
     // 10 images - 5 gigs in this category, each one 2 images
     images: [
@@ -163,7 +214,27 @@ const CATEGORIES = [
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445530/batch_uploads/tmjp1u4qmdsv2krrsij0.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445531/batch_uploads/d5jqqeptgnpogi9llvwr.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445532/batch_uploads/woknbifkriodyl9agfg9.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445533/batch_uploads/iokxdffud4an700keif6.jpg'
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445533/batch_uploads/iokxdffud4an700keif6.jpg',
+   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955276/batch_uploads/bdtyuq3nf08tzcsekulj.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955279/batch_uploads/k0yxp0opcruf2zr5f0jj.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955279/batch_uploads/jhfdruyajut8ssque2tu.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955280/batch_uploads/hfsfstaiorkfclupprsk.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955281/batch_uploads/jirkf3sskfwr186kijf4.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955282/batch_uploads/axgmaraodkeg8tmkkmwk.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955283/batch_uploads/twhkktgdppw4wpkpia6y.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955285/batch_uploads/lg5dcvgh1s14yiidqwvx.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955286/batch_uploads/grq35nhoomzl2w39eqcc.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955287/batch_uploads/pch1uqjizahyiobsrmgn.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955288/batch_uploads/gxz1c3kvd2w2p0lyzewu.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955289/batch_uploads/brfrhwrwfdxdohyh1i09.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955290/batch_uploads/yxr3qlvxntnrnm7aflru.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955292/batch_uploads/aqbmxa0i711nz9hc9xlp.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955293/batch_uploads/cgtlukygaksuavzr8z6m.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955295/batch_uploads/wyhsa17xgzd8l57drjyi.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955297/batch_uploads/ahwmsbfyap7xznh3ljg4.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955298/batch_uploads/vtogca4ktz27dc2yrnff.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955300/batch_uploads/isasjtmttpvjxqoqwlip.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955301/batch_uploads/hrdluedcdw5rerdiz0d6.jpg'
           ]
   },
   { 
@@ -175,6 +246,20 @@ const CATEGORIES = [
       'I will write website copy that converts',
 'I will write engaging product descriptions for ecommerce',
 'I will optimize your SEO on page',
+  'I will write compelling sales copy for your business',
+  'I will translate texts professionally and accurately',
+  'I will rewrite and improve your existing content',
+  'I will write high quality articles for your blog',
+  'I will create SEO optimized website content',
+  'I will write clear and engaging landing page copy',
+  'I will proofread articles for grammar and clarity',
+  'I will write email copy that boosts conversions',
+  'I will translate documents with natural tone',
+  'I will write product descriptions that sell',
+  'I will edit AI generated content to sound human',
+  'I will write social media captions for your brand',
+  'I will create keyword optimized content for SEO',
+  'I will write professional business content'
 
     ],
     // 12 images - 6 gigs in this category, each one 2 images
@@ -190,7 +275,25 @@ const CATEGORIES = [
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445560/batch_uploads/lszvcpdstnk6z8rspvp1.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445562/batch_uploads/huo2hdb4j6fa6lb4nzql.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445563/batch_uploads/vpd1um6qek42cqitp5hk.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445564/batch_uploads/mpaxowb4rpwrboivuqie.jpg'
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445564/batch_uploads/mpaxowb4rpwrboivuqie.jpg',
+   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955561/batch_uploads/tgtyarw7urmojmi2qpmf.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955561/batch_uploads/fld97abzqokhvmszicvp.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955562/batch_uploads/giriucdtyppexficwyxk.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955564/batch_uploads/oce3fihlhkoao2gdxalr.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955565/batch_uploads/ubjf0jeudbxq92mcgr6j.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955566/batch_uploads/smnkeqmpukjaq8qwggto.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955567/batch_uploads/ol89jjww0ntldfj7gpbs.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955568/batch_uploads/hbpvwadrzgm6ac55ps47.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955569/batch_uploads/rcfrrfrwytvpxg4j8iap.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955570/batch_uploads/p7vtpoepj9flerxmdln4.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955571/batch_uploads/doaw2rgqfjkhhewxf0hm.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955572/batch_uploads/ti2odreoemkenqgta4bj.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955573/batch_uploads/line619z9auejflouoly.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955574/batch_uploads/x8yljqtdih21nqu3pd9l.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955575/batch_uploads/pb8or55fuzhkzmflnsya.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955577/batch_uploads/bx5pytbow7efdkog8q37.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955578/batch_uploads/eurkst2mzn2miqop54yi.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955579/batch_uploads/gqrazo11amjjd5yqgdz1.jpg'
     ]
   },
   { 
@@ -201,7 +304,22 @@ const CATEGORIES = [
       'I will mix and master your song', 
       'I will record a professional voice over', 
       'I will edit and clean podcast audio',
-      'I will help you with your first single!'
+      'I will help you with your first single!',
+        'I will compose original music for your project',
+  'I will mix and master your track to industry standards',
+  'I will produce a beat tailored to your style',
+  'I will edit and enhance vocal recordings',
+  'I will remove noise and improve audio quality',
+  'I will create background music for videos and ads',
+  'I will record a clear and natural voice over',
+  'I will edit podcasts for smooth and professional sound',
+  'I will tune vocals and fix pitch issues',
+  'I will produce intro and outro music for your podcast',
+  'I will create custom sound effects',
+  'I will arrange and polish your music composition',
+  'I will convert your rough demo into a finished track',
+  'I will mix vocals over your instrumental',
+  'I will master your audio for streaming platforms'
     ],
     // 10 images - 5 gigs in this category, each one 2 images
     images: [
@@ -214,7 +332,27 @@ const CATEGORIES = [
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445604/batch_uploads/s3crtsxg6tgg07ud1qqs.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445605/batch_uploads/sus38vixooh6gii1ztyi.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445606/batch_uploads/hkwxvgyuvqxsixp0j1vc.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445608/batch_uploads/lklzypcgzyghu5krcq8e.jpg'
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445608/batch_uploads/lklzypcgzyghu5krcq8e.jpg',
+    'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955903/batch_uploads/rbj5sec2ayhlsnmtrsoc.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955904/batch_uploads/in6ieo4iutuqitzxlpaj.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955905/batch_uploads/tstrbhd4wbwvgtcy89fd.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955906/batch_uploads/vyw0lotmwxbmfopauvjb.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955907/batch_uploads/hoj8x2uhkkcuvknbjxow.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955910/batch_uploads/sbv8y5qrlojkn57ifavn.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955911/batch_uploads/botsu8kqh0vphzvcjqvv.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955912/batch_uploads/r4sx0lo1hfeqnou945fs.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955913/batch_uploads/kuz4wvswxm7k8ip3e9ik.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955914/batch_uploads/huobuipybe6k8fgmgv64.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955915/batch_uploads/bkkdcdf4xx37tqd780ak.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955916/batch_uploads/xybwpz51gfromfwmsali.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955918/batch_uploads/lvew1lai73n1bablucyv.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955920/batch_uploads/mownnwlfvqvje9tgqoux.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955921/batch_uploads/zfi17739l1k7x5qr5lxg.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955925/batch_uploads/udcyygohqcr03e3ugzgo.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955928/batch_uploads/zztv56jwiurgyfkp6km5.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955929/batch_uploads/mmaocqnptdojaaaoqmu5.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955929/batch_uploads/kpto4cwv4pnlww4r4s17.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769955930/batch_uploads/cnv2hgyukgdqayml0npi.jpg'
     ]
   },
   { 
@@ -224,7 +362,22 @@ const CATEGORIES = [
       'I will analyze your business strategy', 
       'I will help you launch a startup', 
       'I will prepare a pitch deck for investors',
-      'I will build your business plan strategy'
+      'I will build your business plan strategy',
+        'I will develop a clear business strategy',
+  'I will create a startup roadmap from idea to launch',
+  'I will analyze your market and competitors',
+  'I will build a professional pitch presentation',
+  'I will help you validate your business idea',
+  'I will create financial projections for your business',
+  'I will improve and refine your business plan',
+  'I will prepare an investor ready pitch deck',
+  'I will help you structure your business model',
+  'I will create a go to market strategy',
+  'I will analyze and optimize business processes',
+  'I will help you plan and scale your business',
+  'I will create executive summaries for investors',
+  'I will build a lean startup business plan',
+  'I will help turn your idea into a real business'
     ],
     // 10 images - 5 gigs in this category, each one 2 images
     images: [
@@ -237,7 +390,12 @@ const CATEGORIES = [
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445647/batch_uploads/w1mwov7nh0tigqy2cegh.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445649/batch_uploads/jshufm1fa2daua2c6hhv.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445650/batch_uploads/nuo4ut0jrvgwo9pn4zqq.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445651/batch_uploads/farryejdhykyzvvl6shq.jpg'
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445651/batch_uploads/farryejdhykyzvvl6shq.jpg',
+    'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956459/batch_uploads/lbzhbo8z6rb6pma8u2pk.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956460/batch_uploads/coxds9khdk3vwqmspsit.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956461/batch_uploads/tiddoijjldw4yj6aaz5z.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956462/batch_uploads/t5f0zsxj908o9i50y3bt.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956463/batch_uploads/bhzktfrmg8zkmjztkqun.jpg'
     ]
   },
   { 
@@ -247,7 +405,23 @@ const CATEGORIES = [
       'I will analyze your financial data', 
       'I will build financial spreadsheets', 
       'I will provide investment analysis',
-    'I will help you with your financial decisions'],
+    'I will help you with your financial decisions',
+    'I will create a detailed monthly budget',
+  'I will organize and clean your financial data',
+  'I will build Excel or Google Sheets financial models',
+  'I will analyze expenses and cash flow',
+  'I will create a personal finance tracking system',
+  'I will help you understand your income and expenses',
+  'I will prepare financial reports and summaries',
+  'I will analyze business financial performance',
+  'I will create forecasting and budgeting spreadsheets',
+  'I will help you plan your savings goals',
+  'I will review your financial statements',
+  'I will create a simple investment tracking sheet',
+  'I will help you make data driven financial decisions',
+  'I will build custom finance dashboards',
+  'I will analyze financial trends and insights'
+  ],
     // 10 images - 5 gigs in this category, each one 2 images
     images: [
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445670/batch_uploads/zmlownypck4wuntxdtxc.jpg',
@@ -258,7 +432,18 @@ const CATEGORIES = [
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445676/batch_uploads/lq24qtwg63chv6ffutgq.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445678/batch_uploads/vleyzyzohflssyjofqtu.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445681/batch_uploads/n9snhcekoaccc0l2o2qe.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445682/batch_uploads/zywtmnnl7kcmdckniftp.jpg'
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445682/batch_uploads/zywtmnnl7kcmdckniftp.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956616/batch_uploads/rmwnbxikrfbi9weqgzny.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956617/batch_uploads/syteabbohqijkzufulkd.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956618/batch_uploads/whfquwpcmagbppwawycw.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956618/batch_uploads/oety2tecs7kl1xy19jib.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956619/batch_uploads/p61evj7jsc95r3ttfh44.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956620/batch_uploads/w6gz6ns7w3ukdbcczh0d.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956621/batch_uploads/gmfl0ghnmlls7pejxmqw.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956622/batch_uploads/juscrvfpr3ffwbtb6vzt.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956623/batch_uploads/pu9f7ltu5jvmbbrdc03h.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956625/batch_uploads/lijpw5ywgbhgw9a6kcxr.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956626/batch_uploads/w1chhsxgxnxame6xn9n9.jpg'
 
     ]
   },
@@ -291,7 +476,19 @@ const CATEGORIES = [
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445708/batch_uploads/mz5ooudvcrhcloexrn4w.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445709/batch_uploads/ue6s2gqtqbyp3jhilzfo.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445710/batch_uploads/iap1uasayrax3cfrjm44.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445712/batch_uploads/bbywlnbacoibvkffzxpu.jpg'
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445712/batch_uploads/bbywlnbacoibvkffzxpu.jpg',
+    'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956829/batch_uploads/tdrvdiwunwly3bvwtd0t.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956830/batch_uploads/fve08kwhcbm1wotskubr.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956833/batch_uploads/orfwwf2hn9scsjocxbew.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956835/batch_uploads/dzn6pa9g2taskayrb1hg.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956836/batch_uploads/t2g4rpeqsdx6oylupczj.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956837/batch_uploads/edxa1ogzyfykmliewzml.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956838/batch_uploads/i4943ljyxlxmw9hbpznx.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956839/batch_uploads/rxqv6lr4akneqaugjhoq.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956840/batch_uploads/u4ik6q4o7zfcsx7mpqvz.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956841/batch_uploads/afdywvv1edyj4ddayocd.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956842/batch_uploads/yylppevio8ndc8wumswa.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956843/batch_uploads/rfufg6kpjbyfpiqnfpw8.jpg'
     ]
   },
     { 
@@ -330,7 +527,12 @@ const CATEGORIES = [
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445744/batch_uploads/bicnfapeygiib4cuefio.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445745/batch_uploads/jbzlvsqaytnfp471gzd8.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445746/batch_uploads/irmmpheaitexmn0hjgmo.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445747/batch_uploads/h1rpvygoh5bobhnxwdyb.jpg'
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445747/batch_uploads/h1rpvygoh5bobhnxwdyb.jpg',
+    'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956914/batch_uploads/k7ibapzy7clcyrfjwkxk.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956915/batch_uploads/ujnvljshq5bs8bbjmker.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956916/batch_uploads/bq0ulbri9zdyx6hzxakt.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956917/batch_uploads/kyyr8erpk941jla4ov7p.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769956919/batch_uploads/d3zrn56ykbxk4bhpwfsb.jpg'
     ]
   }
 ];
@@ -397,7 +599,7 @@ async function seed(categories) {
         username: faker.internet.username(),
         imgUrl: faker.helpers.arrayElement(shuffledUserImgs),
         level: faker.number.int({ min: 1, max: 5 }),
-        rate: Number(faker.number.float({ min: 3.8, max: 5 }).toFixed(1)),
+        rate: Number(faker.number.float({ min: 4.3, max: 5 }).toFixed(1)),
         password: 'hashedpassword',
         orders: [],
         isAdmin: false
@@ -416,11 +618,11 @@ async function seed(categories) {
       categoryImagePools[category.slug] = faker.helpers.shuffle([...category.images])
 
       // Number of gigs = total images / 2 (2 images per gig)
-      const numGigs = Math.floor(category.images.length / 2)
+      const numGigs = Math.floor(category.images.length / 3)
 
       for (let i = 0; i < numGigs; i++) {
         const owner = faker.helpers.arrayElement(users)
-        const imgUrls = getUniqueGigImgs(category, 2)
+        const imgUrls = getUniqueGigImgs(category, 3)
 
         gigs.push({
           _id: new ObjectId(),
