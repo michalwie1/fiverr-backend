@@ -569,17 +569,16 @@ async function seed(categories) {
 
     const userImgs = [
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767815206/5_wyyray.jpg",
-      "https://res.cloudinary.com/dwc11osoz/image/upload/v1767814538/6_eo9pus.jpg",
-   'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445820/batch_uploads/cfygaizbeah9mvozlzpq.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445822/batch_uploads/jbdj2qocxftttl5vmivu.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445823/batch_uploads/hocxdhzrfbsjov2whwpj.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445824/batch_uploads/muh9yd0pbryhokvody6n.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445826/batch_uploads/wklmw1h0ya81nirl1jnh.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445826/batch_uploads/kakmihexkehxjrj5v4kf.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445828/batch_uploads/q1pptahlg6mifbrgperr.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445828/batch_uploads/etf6wo1qhvpvh4vpcnob.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445830/batch_uploads/dzu13rusl3w9pqd6f7uq.jpg',
-  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445831/batch_uploads/t4lzgn8gexklokpurvnc.jpg',
+  //  'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445820/batch_uploads/cfygaizbeah9mvozlzpq.jpg',
+  // 'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445822/batch_uploads/jbdj2qocxftttl5vmivu.jpg',
+  // 'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445823/batch_uploads/hocxdhzrfbsjov2whwpj.jpg',
+  // 'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445824/batch_uploads/muh9yd0pbryhokvody6n.jpg',
+  // 'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445826/batch_uploads/wklmw1h0ya81nirl1jnh.jpg',
+  // 'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445826/batch_uploads/kakmihexkehxjrj5v4kf.jpg',
+  // 'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445828/batch_uploads/q1pptahlg6mifbrgperr.jpg',
+  // 'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445828/batch_uploads/etf6wo1qhvpvh4vpcnob.jpg',
+  // 'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445830/batch_uploads/dzu13rusl3w9pqd6f7uq.jpg',
+  // 'https://res.cloudinary.com/dwc11osoz/image/upload/v1769445831/batch_uploads/t4lzgn8gexklokpurvnc.jpg',
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767814558/2_sofpjc.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767814562/1_nmhwxf.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767815192/7_ay36fx.jpg",
@@ -588,6 +587,23 @@ async function seed(categories) {
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767814538/6_eo9pus.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767814526/4_vosvoc.jpg",
       "https://res.cloudinary.com/dwc11osoz/image/upload/v1767814519/3_fkwr7v.jpg",
+      // "https://res.cloudinary.com/dwc11osoz/image/upload/v1770028019/pexels-photo-1587009_apcl4i.jpg",
+
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1770028315/batch_uploads/eayor4kkaiv3s5rihxzw.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1770028315/batch_uploads/bhc1uszh9usedmcymknf.jpg',
+  'https://res.cloudinary.com/dwc11osoz/image/upload/v1770028316/batch_uploads/ppq4k2exiyp9gsmxuzif.jpg',
+
+      "https://res.cloudinary.com/dwc11osoz/image/upload/v1770028382/pexels-photo-1130626_tikgtm.jpg",
+      "https://res.cloudinary.com/dwc11osoz/image/upload/v1770028406/pexels-photo-712513_spv78b.jpg",
+      "https://res.cloudinary.com/dwc11osoz/image/upload/v1770028603/pexels-photo-769772_i8eqi8.jpg",
+      "https://res.cloudinary.com/dwc11osoz/image/upload/v1770028689/pexels-photo-35565353_bpupj4.jpg",
+      "https://res.cloudinary.com/dwc11osoz/image/upload/v1770028725/pexels-photo-29446172_srxel2.jpg",
+      "https://res.cloudinary.com/dwc11osoz/image/upload/v1770028781/pexels-photo-1090387_iexzip.jpg",
+      "https://res.cloudinary.com/dwc11osoz/image/upload/v1770028819/pexels-photo-1181519_nvbxtf.jpg",
+      "https://res.cloudinary.com/dwc11osoz/image/upload/v1770028943/pexels-photo-312492_wmkm05.jpg",
+      "https://res.cloudinary.com/dwc11osoz/image/upload/v1770029104/pexels-photo-3777952_clyd5v.jpg",
+      "https://res.cloudinary.com/dwc11osoz/image/upload/v1770029171/pexels-photo-1181424_hweej9.jpg",
+
     ]
 
     const shuffledUserImgs = faker.helpers.shuffle(userImgs)
@@ -600,7 +616,7 @@ async function seed(categories) {
         imgUrl: faker.helpers.arrayElement(shuffledUserImgs),
         level: faker.number.int({ min: 1, max: 5 }),
         rate: Number(faker.number.float({ min: 4.3, max: 5 }).toFixed(1)),
-        password: 'hashedpassword',
+        // password: 'hashedpassword',
         orders: [],
         isAdmin: false
       })

@@ -8,13 +8,13 @@ cloudinary.config({
 });
 
 const imageUrls = [
-  "https://images.pexels.com/photos/7195113/pexels-photo-7195113.jpeg",
-  "https://images.pexels.com/photos/8292879/pexels-photo-8292879.jpeg",
-  "https://images.pexels.com/photos/7731323/pexels-photo-7731323.jpeg",
-  "https://images.pexels.com/photos/4960341/pexels-photo-4960341.jpeg",
-  "https://images.pexels.com/photos/7111487/pexels-photo-7111487.jpeg",
-
-
+      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg",
+      "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg",
+      "https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg",
+      "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg",
+      "https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg",
+      "https://images.pexels.com/photos/712521/pexels-photo-712521.jpeg",
+      "https://images.pexels.com/photos/35119824/pexels-photo-35119824.jpeg",
 
 ];
 
