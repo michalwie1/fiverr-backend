@@ -270,7 +270,8 @@ function _getGigAggregation({
           imgUrl: '$owner.imgUrl',
           level: '$owner.level',
           rate: '$owner.rate'
-        }
+        },
+        reviews: 1
       }
     }
   )
