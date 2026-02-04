@@ -85,7 +85,7 @@ const CATEGORIES = [
       'I will design you next flyer',
       'I will help you design a working adds for you business'
     ],
-    // graphics-design - 33 images - 11 gigs in this category, each one 2 images
+    // graphics-design - 45 images - 15 gigs in this category, each one 2 images
     images: [
       "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1767807554/3_ib4noj.webp",
       "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1767808442/create-professional-minimalist-logo-design-for-your-business_1_a52ybl.webp",
@@ -105,9 +105,39 @@ const CATEGORIES = [
   'https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1769954289/batch_uploads/odkndmjfixrv7yrayqrl.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1769958946/pexels-photo-14037332_tzukoc.jpg',
   'https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1769959023/pexels-photo_uutmby.jpg',
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1769959324/pexels-photo-12760383_o6zfqu.jpg",
+  
+  
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215430/92fc016e4f46ecbd1dac24cc6a764fe823ef300b_ldmdxd.png",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215421/design-professional-logo-design_hyhexo.jpg",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215408/cocobrand_20guide_compressed_kkk6nx_snz3np.jpg",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215386/design-professional-logo-design_ukbkiz.jpg",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215365/design-professional-logo-design_ghxbmr.jpg",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215339/do-a-flat-logo-design-3060449e-f727-48d3-ab00-7a289cb62792_wolb4h.png",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215336/do-a-flat-logo-design-3060449e-f727-48d3-ab00-7a289cb62792_bzbpnv.png",
+  
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215321/do-a-flat-logo-design-3060449e-f727-48d3-ab00-7a289cb62792_v0twyi.png",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215313/do-a-flat-logo-design-3060449e-f727-48d3-ab00-7a289cb62792_jda4aj.png",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215295/create-brand-logo-design-for-your-business_yt1q8u.png",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215281/create-brand-logo-design-for-your-business_wrp2l3.png",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215272/Modern_20Logo_rfoybe_lv8s1d.jpg",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215266/Brand_20Logo_20Design_gwgdd9_csk1g7.jpg",
 
-  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1769959324/pexels-photo-12760383_o6zfqu.jpg"
 
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215259/create-brand-logo-design-for-your-business_j6p7az.png",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215240/create-brand-logo-design-for-your-business_dhse7q.png",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215240/create-brand-logo-design-for-your-business_dhse7q.png",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215173/design-a-retro-vintage-logo_o8lamc.jpg",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215157/Gig2compressed_me1p6l_qyenep.jpg",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215137/Gig1compressed_qolslt_yptgkc.jpg",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215121/design-a-retro-vintage-logo_be6qdp.jpg",
+
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770215092/design-a-retro-vintage-logo_bjxsv2.jpg",
+
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770216479/do-exclusive-premium-modern-minimalist-line-art-logo-design_bf94lo.jpg",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770216487/do-exclusive-premium-modern-minimalist-line-art-logo-design_xntixd.png",
+  "https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770216491/modern_20logo_20logo_20creation_20logo_20design_20business_20geometric_20logo_rigfya_kbmvx5.jpg",
+"https://res.cloudinary.com/dwc11osoz/image/upload/f_webp,q_auto,c_limit,w_300/v1770217013/design-modern-logo-branding-kit-with-complete-brand-identity_cslu5g.jpg"
         ]
   },
   { 
@@ -696,7 +726,7 @@ async function seed() {
         gigs.push({
           _id: new ObjectId(),
           title: faker.helpers.arrayElement(category.titles),
-          price: faker.number.int({ min: 20, max: 500 }),
+          price: faker.number.int({ min: 9, max: 500 }),
           daysToMake: faker.number.int({ min: 1, max: 14 }),
           description: faker.lorem.paragraph(),
           avgResponseTime: faker.number.int({ min: 1, max: 12 }),
