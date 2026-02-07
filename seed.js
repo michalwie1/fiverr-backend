@@ -1124,7 +1124,7 @@ for (const buyer of users) {
     const status = faker.helpers.arrayElement([
       'pending',
       'approved',
-      'in-progress',
+      // 'in-progress',
       'rejected'
     ])
 
