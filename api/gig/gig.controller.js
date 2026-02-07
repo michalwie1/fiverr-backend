@@ -3,6 +3,7 @@ import { gigService } from './gig.service.js'
 
 export async function getGigs(req, res) {
 	// const getQueryValue = (field) => req.query[field] || req.query[`${field}[]`]
+	
 	try {
 		const filterBy = {
 			txt: req.query.txt || '',
@@ -14,9 +15,10 @@ export async function getGigs(req, res) {
             loc: req.query.loc?.split(',') || [],
 			avgResponseTime: req.query.avgResponseTime || null, 
 			category: req.query.category || '', 
-            sortField: req.query.sortField || 'recommended',
+            sortField: req.query.sort || 'recommended',
 			// pageIdx: req.query.pageIdx,
 		}
+		console.log('re',req.query.sort)
 
 		const gigs = await gigService.query(filterBy)
 		res.json(gigs)
